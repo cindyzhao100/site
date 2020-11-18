@@ -1,0 +1,16 @@
+baseURL = "https://example.com/"
+title = "Lihao's Blog | 立昊的博客"
+googleAnalytics = "UA-123-456-789"
+theme = "github-style"
+copyright = "© 2019. Theme by <a href=\"https://github.com/liz2020/github-style\"><span>github-style</span></a>"
+
+[params]
+  author = "Lihao Zhu"
+  description = "personal blog"
+  github = "liz2020"
+  twitter = "example"
+  email = "lihaozhu@seas.upenn.edu"
+  url = "https://liz2020.github.io/me"
+  utterances = "liz2020/blogs"
+  avatar = "https://avatars0.githubusercontent.com/u/25622540?s=460&v=4"
+  keywords = "blog, google analytics"
