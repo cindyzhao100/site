@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lihao&#39;s Blog | 立昊的博客</title>
-    <link>https://liz2020.github.io/blogs/</link>
-    <description>Recent content on Lihao&#39;s Blog | 立昊的博客</description>
+    <title>hugo on Lihao&#39;s Blog | 立昊的博客</title>
+    <link>https://liz2020.github.io/blogs/tags/hugo/</link>
+    <description>Recent content in hugo on Lihao&#39;s Blog | 立昊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 18 Nov 2020 11:23:00 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2020 11:23:00 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用Hugo在GitHub上搭建个人博客</title>
       <link>https://liz2020.github.io/blogs/posts/use-hugo-to-build-blog-on-github/</link>
@@ -20,15 +20,6 @@ brew install hugo 随后用hugo生成基础的网站框架,这里blogs可以替�
 hugo new site blogs 进去blogs，待会要修改里面的congig.toml文件以及往content(内容)和theme(风格)里添加文件。总之先设置下主题，这里用的是github-style。这行指令会下载最新版本的github-style到theme/github-style的位置
 git submodule add git@github.com:MeiK2333/github-style.git themes/github-style 接下来修改config.toml文件。这个是用来设置Hugo的。github-style给了一个基本模板
 baseURL = &amp;quot;https://example.com/&amp;quot; title = &amp;quot;GitHub Style&amp;quot; googleAnalytics = &amp;quot;UA-123-456-789&amp;quot; theme = &amp;quot;github-style&amp;quot; copyright = &amp;quot;© 2019. Theme by &amp;lt;a href=\&amp;quot;https://github.com/MeiK2333/github-style\&amp;quot;&amp;gt;&amp;lt;span&amp;gt;github-style&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;quot; [params] author = &amp;quot;example&amp;quot; description = &amp;quot;example&amp;quot; github = &amp;quot;example&amp;quot; facebook = &amp;quot;example&amp;quot; twitter = &amp;quot;example&amp;quot; misskey = &amp;quot;user profile url&amp;quot; mastodon = &amp;quot;user profile url&amp;quot; email = &amp;quot;example@domain.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://liz2020.github.io/blogs/about/</link>
-      <pubDate>Wed, 18 Nov 2020 10:33:32 -0500</pubDate>
-      
-      <guid>https://liz2020.github.io/blogs/about/</guid>
-      <description></description>
     </item>
     
   </channel>
