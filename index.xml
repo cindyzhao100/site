@@ -6,14 +6,23 @@
     <description>Recent content on Lihao&#39;s Blog | 立昊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 18 Nov 2020 11:23:00 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Nov 2020 16:34:10 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给博客设置Google Analytics</title>
+      <link>https://liz2020.github.io/blogs/posts/setup-googleanalytics/</link>
+      <pubDate>Thu, 19 Nov 2020 16:34:10 -0500</pubDate>
+      
+      <guid>https://liz2020.github.io/blogs/posts/setup-googleanalytics/</guid>
+      <description>&lt;p&gt;&amp;ldquo;享受在后台看博客阅览量为0的快乐…大概!&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>用Hugo在GitHub上搭建个人博客</title>
       <link>https://liz2020.github.io/blogs/posts/use-hugo-to-build-blog-on-github/</link>
       <pubDate>Wed, 18 Nov 2020 11:23:00 -0500</pubDate>
       
       <guid>https://liz2020.github.io/blogs/posts/use-hugo-to-build-blog-on-github/</guid>
-      <description>&lt;p&gt;“虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊！”&lt;/p&gt;</description>
+      <description>&lt;p&gt;&amp;ldquo;虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
