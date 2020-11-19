@@ -1,6 +1,6 @@
 baseURL = "https://liz2020.github.io/blogs"
 title = "Lihao's Blog | 立昊的博客"
-googleAnalytics = "G-TSYRSLBQHR"
+googleAnalytics = "UA-183495039-1"
 theme = "github-style"
 copyright = "© 2019. Theme by <a href=\"https://github.com/liz2020/github-style\"><span>github-style</span></a>"
 
