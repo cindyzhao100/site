@@ -13,13 +13,7 @@
       <pubDate>Wed, 18 Nov 2020 11:23:00 -0500</pubDate>
       
       <guid>https://liz2020.github.io/blogs/posts/use-hugo-to-build-blog-on-github/</guid>
-      <description>起因 某日在翻Github的时候偶然看到了奇趣保罗的博客，视觉效果非常棒。于是起了自己也做一个的心思。可是Typocho和WordPress的注册域名和备案一系列的操作感觉很繁琐，并且没法白嫖(重点)。而MkDocs虽然免费，但作为专门写文档的工具还是缺了点博客需要的部件。
-再一通谷歌找到了Meik2333的github-style Hugo博客主题，也是现在这个页面使用的主题。上手之后发现Hugo生成页面的速度真的非常快（应该说不愧是Go语言的产物），而且文档上面也有deploy到GitHub Page上的方法。用markdown写博客又和之前用MkDocs的想法异曲同工。就这个了！
-准备工作 首先安装Hugo,在mac上可以直接用brew
-brew install hugo 随后用hugo生成基础的网站框架,这里blogs可以替换成自己想要的文件夹名字
-hugo new site blogs 进去blogs，待会要修改里面的congig.toml文件以及往content(内容)和theme(风格)里添加文件。总之先设置下主题，这里用的是github-style。这行指令会下载最新版本的github-style到theme/github-style的位置
-git submodule add git@github.com:MeiK2333/github-style.git themes/github-style 接下来修改config.toml文件。这个是用来设置Hugo的。github-style给了一个基本模板
-baseURL = &amp;quot;https://example.com/&amp;quot; title = &amp;quot;GitHub Style&amp;quot; googleAnalytics = &amp;quot;UA-123-456-789&amp;quot; theme = &amp;quot;github-style&amp;quot; copyright = &amp;quot;© 2019. Theme by &amp;lt;a href=\&amp;quot;https://github.com/MeiK2333/github-style\&amp;quot;&amp;gt;&amp;lt;span&amp;gt;github-style&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;quot; [params] author = &amp;quot;example&amp;quot; description = &amp;quot;example&amp;quot; github = &amp;quot;example&amp;quot; facebook = &amp;quot;example&amp;quot; twitter = &amp;quot;example&amp;quot; misskey = &amp;quot;user profile url&amp;quot; mastodon = &amp;quot;user profile url&amp;quot; email = &amp;quot;example@domain.</description>
+      <description>&lt;p&gt;“虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊！”&lt;/p&gt;</description>
     </item>
     
   </channel>
