@@ -10,8 +10,7 @@
     
     <meta name="viewport" content="width=device-width">
     <meta name="description"
-        content="&amp;ldquo;享受在后台看博客阅览量为0的快乐…大概!&amp;rdquo;
-" />
+        content="享受在后台看博客阅览量为0的快乐…大概!" />
     <meta name="keywords"
         content="blog, google analytics" />
     <meta name="robots" content="noodp" />
@@ -21,8 +20,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="给博客设置Google Analytics - Lihao&#39;s Blog | 立昊的博客" />
     <meta name="twitter:description"
-        content="&amp;ldquo;享受在后台看博客阅览量为0的快乐…大概!&amp;rdquo;
-" />
+        content="享受在后台看博客阅览量为0的快乐…大概!" />
     <meta name="twitter:site" content="https://liz2020.github.io/blogs" />
     <meta name="twitter:creator" content="" />
     <meta name="twitter:image"
@@ -32,8 +30,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="给博客设置Google Analytics - Lihao&#39;s Blog | 立昊的博客">
     <meta property="og:description"
-        content="&amp;ldquo;享受在后台看博客阅览量为0的快乐…大概!&amp;rdquo;
-" />
+        content="享受在后台看博客阅览量为0的快乐…大概!" />
     <meta property="og:url" content="https://liz2020.github.io/blogs/posts/setup-googleanalytics/" />
     <meta property="og:site_name" content="给博客设置Google Analytics" />
     <meta property="og:image"
@@ -170,15 +167,13 @@ if (!doNotTrack) {
                     <div class="Box mt-3 position-relative">
                         <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
                             <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                                629 Words
+                                591 Words
                                 
                             </div>
                         </div>
 
                         <div id="readme" class="Box-body readme blob instapaper_body js-code-block-container">
-                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><p>&ldquo;享受在后台看博客阅览量为0的快乐…大概!&rdquo;</p>
-<h2 id="如何设置">如何设置</h2>
-<p>原以为Hugo在config.toml里面内置了googleAnalytics的变量，然后也提供了internel template,设置谷歌分析根本不成问题。结果翻车了，半天统计不上数据。</p>
+                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><p>原以为Hugo在config.toml里面内置了googleAnalytics的变量，然后也提供了internel template,设置谷歌分析根本不成问题。结果翻车了，半天统计不上数据。</p>
 <p>搜索出来的结果是，谷歌的分析更新啦。所以拿到的不是UA开头的tracking id，而是G开头的measurement id。中文页面翻译是追踪id和衡量id。而衡量id需要用的是Google tagmanager而不是原先的google analysis的代码片段放在header里。不过对原先UA的支持还是有的，需要在创建properly的时候选择高级选项，然后把universal analysis勾上。</p>
 <p>用衡量id可以拿到更多的数据，但如果只想看访问量可以只用原先的追踪id。如果要用新的衡量id，则可以在原先的代码head.html里添加上</p>
 <pre><code>&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
@@ -195,7 +190,8 @@ if (!doNotTrack) {
 <pre><code>{{ if eq (getenv &quot;HUGO_ENV&quot;) &quot;production&quot;}}
 代码
 {{ end }}
-</code></pre><p>然后在deploy.sh里面用env HUGO_ENV=&ldquo;production&rdquo; hugo来创建网站。</p></article>
+</code></pre><p>然后在deploy.sh里面用env HUGO_ENV=&ldquo;production&rdquo; hugo来创建网站。</p>
+</article>
                         </div>
                     </div>
                 </div>
