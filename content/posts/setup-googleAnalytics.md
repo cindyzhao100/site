@@ -3,11 +3,8 @@ title: "给博客设置Google Analytics"
 date: 2020-11-19T16:34:10-05:00
 draft: false
 tags: [google analytics]
+summary: "享受在后台看博客阅览量为0的快乐…大概!"
 ---
-"享受在后台看博客阅览量为0的快乐…大概!"
-<!--more-->
-## 如何设置
-
 原以为Hugo在config.toml里面内置了googleAnalytics的变量，然后也提供了internel template,设置谷歌分析根本不成问题。结果翻车了，半天统计不上数据。
 
 搜索出来的结果是，谷歌的分析更新啦。所以拿到的不是UA开头的tracking id，而是G开头的measurement id。中文页面翻译是追踪id和衡量id。而衡量id需要用的是Google tagmanager而不是原先的google analysis的代码片段放在header里。不过对原先UA的支持还是有的，需要在创建properly的时候选择高级选项，然后把universal analysis勾上。
