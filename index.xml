@@ -6,7 +6,16 @@
     <description>Recent content on Lihao&#39;s Blog | 立昊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 19 Nov 2020 16:34:10 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 01:02:43 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo的time.Format或者说时间的格式</title>
+      <link>https://liz2020.github.io/blogs/posts/hugo-date-and-go-date/</link>
+      <pubDate>Thu, 26 Nov 2020 01:02:43 -0500</pubDate>
+      
+      <guid>https://liz2020.github.io/blogs/posts/hugo-date-and-go-date/</guid>
+      <description>其实是Go的</description>
+    </item>
+    
     <item>
       <title>给博客设置Google Analytics</title>
       <link>https://liz2020.github.io/blogs/posts/setup-googleanalytics/</link>
@@ -31,7 +40,8 @@
       <pubDate>Wed, 18 Nov 2020 10:33:32 -0500</pubDate>
       
       <guid>https://liz2020.github.io/blogs/about/</guid>
-      <description></description>
+      <description>contact: lihaozhu@seas.upenn.edu
+website: https://liz2020.github.io/me</description>
     </item>
     
   </channel>

@@ -6,22 +6,31 @@
     <description>Recent content in Tags on Lihao&#39;s Blog | 立昊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 19 Nov 2020 16:34:10 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 01:02:43 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>google analytics</title>
-      <link>https://liz2020.github.io/blogs/tags/google-analytics/</link>
-      <pubDate>Thu, 19 Nov 2020 16:34:10 -0500</pubDate>
+      <title>Go</title>
+      <link>https://liz2020.github.io/blogs/tags/go/</link>
+      <pubDate>Thu, 26 Nov 2020 01:02:43 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/tags/google-analytics/</guid>
+      <guid>https://liz2020.github.io/blogs/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
       <link>https://liz2020.github.io/blogs/tags/hugo/</link>
-      <pubDate>Wed, 18 Nov 2020 11:23:00 -0500</pubDate>
+      <pubDate>Thu, 26 Nov 2020 01:02:43 -0500</pubDate>
       
       <guid>https://liz2020.github.io/blogs/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google analytics</title>
+      <link>https://liz2020.github.io/blogs/tags/google-analytics/</link>
+      <pubDate>Thu, 19 Nov 2020 16:34:10 -0500</pubDate>
+      
+      <guid>https://liz2020.github.io/blogs/tags/google-analytics/</guid>
       <description></description>
     </item>
     
