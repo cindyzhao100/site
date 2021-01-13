@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://liz2020.github.io/blogs/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/github.min.css' />
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/github-style.css' />
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/light.css' />
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/dark.css' />
+    <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/syntax.css' />
+    <title>用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客</title>
+    
+    <link rel="icon" type="image/x-icon" href='https://liz2020.github.io/blogs/images/favicon.ico'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客" />
+<meta name="twitter:description"
+  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
+<meta name="twitter:site" content="https://liz2020.github.io/blogs" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://liz2020.github.io/blogs">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客">
+<meta property="og:description"
+  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
+<meta property="og:url" content="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/" />
+<meta property="og:site_name" content="用Hugo在GitHub上搭建个人博客" />
+<meta property="og:image"
+  content="https://liz2020.github.io/blogs">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-11-18 11:23:00 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-183495039-1"></script>
+<script>
+  if (navigator.doNotTrack !== '1') {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-183495039-1');
+  }
+</script>
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://liz2020.github.io/blogs">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://liz2020.github.io/blogs">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://liz2020.github.io/blogs">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://liz2020.github.io/blogs">
+                  <img class=" avatar-user"
+                    src="https://avatars0.githubusercontent.com/u/25622540?s=460&amp;v=4"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://liz2020.github.io/blogs">Lihao Zhu</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/">用Hugo在GitHub上搭建个人博客</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Wed, 18 Nov 2020 11:23:00 -0500"
+                    class="no-wrap">
+                    Wed, 18 Nov 2020 11:23:00 -0500</relative-time>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div class="file-header d-flex flex-md-items-center flex-items-start">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    1961 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="/blogs/tags/hugo">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      hugo
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5">
+                <article class="markdown-body entry-content container-lg"><h2 id="起因">起因</h2>
+<p>某日在翻Github的时候偶然看到了<a href="https://paul.ren/">奇趣保罗</a>的博客，视觉效果非常棒。于是起了自己也做一个的心思。可是Typocho和WordPress的注册域名和备案一系列的操作感觉很繁琐，并且没法白嫖(重点)。而MkDocs虽然免费，但作为专门写文档的工具还是缺了点博客需要的部件。</p>
+<p>再一通谷歌找到了<a href="https://github.com/MeiK2333">Meik2333</a>的github-style Hugo博客主题，也是现在这个页面使用的主题。上手之后发现Hugo生成页面的速度真的非常快（应该说不愧是Go语言的产物），而且文档上面也有deploy到GitHub Page上的方法。用markdown写博客又和之前用MkDocs的想法异曲同工。就这个了！</p>
+<h2 id="准备工作">准备工作</h2>
+<p>首先安装Hugo,在mac上可以直接用brew</p>
+<pre><code>brew install hugo
+</code></pre><p>随后用hugo生成基础的网站框架,这里blogs可以替换成自己想要的文件夹名字</p>
+<pre><code>hugo new site blogs
+</code></pre><p>进去blogs，待会要修改里面的congig.toml文件以及往content(内容)和theme(风格)里添加文件。总之先设置下主题，这里用的是github-style。这行指令会下载最新版本的github-style到theme/github-style的位置</p>
+<pre><code>git submodule add git@github.com:MeiK2333/github-style.git themes/github-style
+</code></pre><p>接下来修改config.toml文件。这个是用来设置Hugo的。github-style给了一个基本模板</p>
+<pre><code>baseURL = &quot;https://example.com/&quot;
+title = &quot;GitHub Style&quot;
+googleAnalytics = &quot;UA-123-456-789&quot;
+theme = &quot;github-style&quot;
+copyright = &quot;© 2019. Theme by &lt;a href=\&quot;https://github.com/MeiK2333/github-style\&quot;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;&quot;
+
+[params]
+  author = &quot;example&quot;
+  description = &quot;example&quot;
+  github = &quot;example&quot;
+  facebook = &quot;example&quot;
+  twitter = &quot;example&quot;
+  misskey = &quot;user profile url&quot;
+  mastodon = &quot;user profile url&quot;
+  email = &quot;example@domain.com&quot;
+  utterances = &quot;example/example.github.io&quot;
+  avatar = &quot;https://example.com/images/avatar.png&quot;
+  url = &quot;https://example.com&quot;
+  keywords = &quot;blog, google analytics&quot;
+</code></pre><p>baseURL是我们想要的github.io地址，这里我的用户名是liz2020,而且我想把blogs设置在/blogs这个route下，所以设置的是liz2020.github.io/blogs。GoogleAnalytics是用来分析网站访问人数之类的数据的，可以暂时不改动，不会影响运行。params里面的参数对应的是左边中部显示的图标和链接，没有的可以直接删掉那行。比如说我不想放脸书地址，就可以直接把facebook那行删掉。</p>
+<p>avatar是头像，这里可以直接用自己GitHub的用户头像。去GitHub页面然后右键inspect自己的头像，找到src里面的图片地址复制过来就可以。</p>
+<p>utterances则是文章的评论系统，是将github issues当做放评论的地方，让任何有GitHub账号的人都可以回复。这里把example换成自己的用户名，我的是liz2020/liz2020.github.io。</p>
+<h2 id="创建文章">创建文章</h2>
+<p>先创建about(关于)页面</p>
+<pre><code>hugo new about.md
+</code></pre><p>这会在content里面创建about.md，我们打开那个文件修改一下。需要吧layout设置成“about”,然后draft那行可以删除</p>
+<pre><code>---
+title: &quot;About&quot;
+date: 2020-11-18T10:33:32-05:00
+layout: &quot;about&quot;
+---
+</code></pre><p>其实到现在这个阶段已经可以运行网站来查看情况了。直接运行hugo server，他会显示服务放在http://localhost:1313/blogs/。可以打开阅览器查看</p>
+<pre><code>hugo server
+</code></pre><p>终于到创建博客文章的时候了，这个其实和刚刚创建about页面差不多，不过文章得放在content/posts里面</p>
+<pre><code>hugo new posts/article_name.md
+</code></pre><p>这会创建一个叫article_name.md的文章。里面的默认内容有生成时间，title（标题），还有“draft：true”。draft是草稿，只有把这个改成false文章才会显示。</p>
+<h2 id="发布到github">发布到GitHub</h2>
+<p>这个最好参考<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">官方文档</a>，我选的是里面GitHub User or Organization Pages这个部分的做法。里面会提供完整的脚本，可以直接复制使用。唯一注意的是里面有个upstream需要对应修改，得看一下git remote里面自己的remote叫什么名字，我的是origin。这里贴一下我用的脚本好了：</p>
+<pre><code>#!/bin/sh
+
+if [ &quot;`git status -s`&quot; ]
+then
+    echo &quot;The working directory is dirty. Please commit any pending changes.&quot;
+    exit 1;
+fi
+
+echo &quot;Deleting old publication&quot;
+rm -rf public
+mkdir public
+git worktree prune
+rm -rf .git/worktrees/public/
+
+echo &quot;Checking out gh-pages branch into public&quot;
+git worktree add -B gh-pages public origin/gh-pages
+
+echo &quot;Removing existing files&quot;
+rm -rf public/*
+
+echo &quot;Generating site&quot;
+hugo -t github-style
+
+echo &quot;Updating gh-pages branch&quot;
+cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to gh-pages (publish.sh)&quot;
+
+#echo &quot;Pushing to github&quot;
+#git push --all
+</code></pre><p>使用办法是</p>
+<pre><code>sh deploy.sh
+</code></pre><p>不过用了之后你大概会发现GitHub上没变化，因为脚本最后一行的git push &ndash;all是被注释掉的，所以我们的改变还没推到GitHub上。文档里面说这是让我们可以发布前自己决定要不要检查一下。感觉没问题就</p>
+<pre><code>git push --all
+</code></pre><p>别忘了去GitHub自己的repo里面把GitHub Pages打开，然后使用gh-pages这个branch。</p>
+<h2 id="题外话">题外话</h2>
+<p>其实github-style这个主题不是特别理想</p>
+<ul>
+<li>缺少了搜索功能</li>
+<li>默认是打开夜间模式，没有地方切换</li>
+<li>文章点开后没有上一篇下一篇的按钮，得退回去再点</li>
+<li>和GitHub页面过于像，一些案件会造成困扰。比如Pinned其实是最新发布文章，上下的GitHub图标是回主界面，右上角的头像没有什么用</li>
+</ul>
+<p>所以有空的话我之后会在这个主题的基础上修改一下。不过真的很感谢原作者Meik2333对主题的开源</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://liz2020.github.io/blogs">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">© 2019. Theme by <a href="https://github.com/liz2020/github-style"><span>github-style</span></a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="https://liz2020.github.io/blogs/js/github-style.js"></script>
+
+
+
+</html>
