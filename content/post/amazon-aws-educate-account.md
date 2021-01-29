@@ -3,6 +3,7 @@ title: "Amazon AWS Starter account 使用体验"
 date: 2020-12-17T23:03:38-05:00
 draft: false
 summary: "限制多多"
+tags: [AWS]
 ---
 最近学期末忙着各路project和考试，今天总算有时间和心情更新下博客。主要总结下亚马逊的aws使用体验。使用Amazon educate注册之后获得的starter account每年会有100刀的使用额度，如果超了就得自己垫钱。如果只是为了学校里面的项目而用几天，可以省下好多。保险起见可以在创建各种服务之前用[费用计算器](https://calculator.s3.amazonaws.com/index.html)网站来计算一下开销。
 
