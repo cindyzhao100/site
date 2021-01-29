@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>refactoring on Lihao&#39;s Blog | 立昊的博客</title>
+    <link>https://liz2020.github.io/blogs/tags/refactoring/</link>
+    <description>Recent content in refactoring on Lihao&#39;s Blog | 立昊的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 29 Jan 2021 13:58:30 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Code</title>
+      <link>https://liz2020.github.io/blogs/post/clean-code/</link>
+      <pubDate>Fri, 29 Jan 2021 13:58:30 -0500</pubDate>
+      
+      <guid>https://liz2020.github.io/blogs/post/clean-code/</guid>
+      <description>读代码之丑，bad smell of code</description>
+    </item>
+    
+  </channel>
+</rss>

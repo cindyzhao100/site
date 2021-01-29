@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/light.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/dark.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/syntax.css' />
-    <title>Amazon AWS Starter account 使用体验 - Lihao&#39;s Blog | 立昊的博客</title>
+    <title>Clean Code - Lihao&#39;s Blog | 立昊的博客</title>
     
     <link rel="icon" type="image/x-icon" href='https://liz2020.github.io/blogs/images/favicon.ico'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="限制多多" />
+  content="读代码之丑，bad smell of code" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://liz2020.github.io/blogs/post/amazon-aws-educate-account/" />
+<link rel="canonical" href="https://liz2020.github.io/blogs/post/clean-code/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Amazon AWS Starter account 使用体验 - Lihao&#39;s Blog | 立昊的博客" />
+<meta name="twitter:title" content="Clean Code - Lihao&#39;s Blog | 立昊的博客" />
 <meta name="twitter:description"
-  content="限制多多" />
+  content="读代码之丑，bad smell of code" />
 <meta name="twitter:site" content="https://liz2020.github.io/blogs" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Amazon AWS Starter account 使用体验 - Lihao&#39;s Blog | 立昊的博客">
+<meta property="og:title" content="Clean Code - Lihao&#39;s Blog | 立昊的博客">
 <meta property="og:description"
-  content="限制多多" />
-<meta property="og:url" content="https://liz2020.github.io/blogs/post/amazon-aws-educate-account/" />
-<meta property="og:site_name" content="Amazon AWS Starter account 使用体验" />
+  content="读代码之丑，bad smell of code" />
+<meta property="og:url" content="https://liz2020.github.io/blogs/post/clean-code/" />
+<meta property="og:site_name" content="Clean Code" />
 <meta property="og:image"
   content="https://liz2020.github.io/blogs">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2020-12-17 23:03:38 -0500 EST" />
+<meta property="article:published_time" content="2021-01-29 13:58:30 -0500 EST" />
 
 
 
@@ -154,12 +154,12 @@
                   <span class="author">
                     <a href="https://liz2020.github.io/blogs">Lihao Zhu</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://liz2020.github.io/blogs/post/amazon-aws-educate-account/">Amazon AWS Starter account 使用体验</a></strong>
+                      href="https://liz2020.github.io/blogs/post/clean-code/">Clean Code</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Thu, 17 Dec 2020 23:03:38 -0500"
+                  Created <relative-time datetime="Fri, 29 Jan 2021 13:58:30 -0500"
                     class="no-wrap">
-                    Thu, 17 Dec 2020 23:03:38 -0500</relative-time>
+                    Fri, 29 Jan 2021 13:58:30 -0500</relative-time>
 
                   
                 </div>
@@ -178,20 +178,20 @@
               <div class="file-header d-flex flex-md-items-center flex-items-start">
                 <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
                   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    871 Words
+                    368 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="/blogs/tags/aws">
+                    <a class="muted-link mr-3" href="/blogs/tags/refactoring">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      AWS
+                      refactoring
                     </a>
                     
                     
@@ -201,9 +201,9 @@
 
 
               <div class="Box-body px-5 pb-5">
-                <article class="markdown-body entry-content container-lg"><p>最近学期末忙着各路project和考试，今天总算有时间和心情更新下博客。主要总结下亚马逊的aws使用体验。使用Amazon educate注册之后获得的starter account每年会有100刀的使用额度，如果超了就得自己垫钱。如果只是为了学校里面的项目而用几天，可以省下好多。保险起见可以在创建各种服务之前用<a href="https://calculator.s3.amazonaws.com/index.html">费用计算器</a>网站来计算一下开销。</p>
-<p>由于学校管理员的设置，学生的starter账号没法创建IAM(Identity and Access Management)账号，这让我们的小组作业变得异常难受。IAM账号可以很方便的拿到在aws上创建的资源的访问权限，特别是存储类的RDS, DynamoDB，S3，用户可以不用知道创建资源的人的账号而是用IAM账号来访问。在没有这些的情况下，一些页面就只有创建资源的用户才能看到。RDS在代码里面还可以hard code进地址和访问密码，S3存储则可以让资源变成公开，但DynamoDB如果没有IAM就完全没法让其他人访问。</p>
-<p>不得不说亚马逊的EC2服务是真的很方便。如果没有用过EC2,可以理解成云端的虚拟机，具体<a href="https://scotch.io/@Limorw/whats-the-difference-between-vms-and-ec2-instances">差别是这些</a>。点开创建ec2 instance会先让你选择使用的系统,比如Linux，windows，苹果之类的。我的小组作业用到的是Linux18.04的镜像。然后选择创建instance的类型，t2.nano是默认的免费适用，网速存储cpu都不怎么样。想网速快点再加上更多的ram可以用c4.large，网速类型从low到了median。这篇<a href="https://cloudonaut.io/ec2-network-performance-cheat-sheet/">网速对比</a>可能会派上用场。之后点击创建，然后设置access rsa key就可以用ssh来远程访问了。下载下来的.pem文件记得<code>chmod 400 *.pem</code>改下访问权限。如果ec2想要通过ip地址从公网访问，则只需要在security里面改一下防火墙，加自己需要的inbound rule。比如想允许45555端口，就创建新的custom tcp rule，然后加上45555端口，访问设置成anywhere或者自己想要的ip就可以了。比我之前自己买个树莓派当服务器方便太多了&hellip;</p>
+                <article class="markdown-body entry-content container-lg"><p>蛮久之前读过《代码整洁之道》，不过阅读之后的关注点都在变量和方法的命名上了。更多的部分，比如说一个函数做一件事情，或者是函数的长度不要超过30行之类的建议并没有落到实处。前几天逛极客时间的时候看到了《代码之丑》这个专栏。文章本身的也不长，但是收获却是不小。其中对于常函数，大类和长参数列表的简化方法都很实用。强烈建议花个下午茶的时间读一下。</p>
+<p>开幕雷击，getter和setter这种很常见的东西其实往往代表了代码的坏味道。其一是它们很容易暴露代码的内部实现细节，而且很多时候编辑器有工具会自动生成它们，如果有其他代码不小心call了setter就很容易造成不可预料的后果，那更是雪上加霜了。其二是他们的存在往往暗示着对需求理解的不充分，可以从需求的角度再设计新的方法来实现setter的作用。</p>
+<p>类似的冲击观点还有挺多，这里贴个链接 -&gt; <a href="https://time.geekbang.org/column/intro/100068401">代码之丑</a></p>
 </article>
               </div>
             </div>
