@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/light.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/dark.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/syntax.css' />
-    <title>用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客</title>
+    <title>Hugo的time.Format或者说时间的格式 - Lihao&#39;s Blog | 立昊的博客</title>
     
     <link rel="icon" type="image/x-icon" href='https://liz2020.github.io/blogs/images/favicon.ico'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
+  content="其实是Go的" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/" />
+<link rel="canonical" href="https://liz2020.github.io/blogs/post/201126-hugo-date-and-go-date/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客" />
+<meta name="twitter:title" content="Hugo的time.Format或者说时间的格式 - Lihao&#39;s Blog | 立昊的博客" />
 <meta name="twitter:description"
-  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
+  content="其实是Go的" />
 <meta name="twitter:site" content="https://liz2020.github.io/blogs" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="用Hugo在GitHub上搭建个人博客 - Lihao&#39;s Blog | 立昊的博客">
+<meta property="og:title" content="Hugo的time.Format或者说时间的格式 - Lihao&#39;s Blog | 立昊的博客">
 <meta property="og:description"
-  content="虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!" />
-<meta property="og:url" content="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/" />
-<meta property="og:site_name" content="用Hugo在GitHub上搭建个人博客" />
+  content="其实是Go的" />
+<meta property="og:url" content="https://liz2020.github.io/blogs/post/201126-hugo-date-and-go-date/" />
+<meta property="og:site_name" content="Hugo的time.Format或者说时间的格式" />
 <meta property="og:image"
   content="https://liz2020.github.io/blogs">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2020-11-18 11:23:00 -0500 EST" />
+<meta property="article:published_time" content="2020-11-26 01:02:43 -0500 EST" />
 
 
 
@@ -154,12 +154,12 @@
                   <span class="author">
                     <a href="https://liz2020.github.io/blogs">Lihao Zhu</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/">用Hugo在GitHub上搭建个人博客</a></strong>
+                      href="https://liz2020.github.io/blogs/post/201126-hugo-date-and-go-date/">Hugo的time.Format或者说时间的格式</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Wed, 18 Nov 2020 11:23:00 -0500"
+                  Created <relative-time datetime="Thu, 26 Nov 2020 01:02:43 -0500"
                     class="no-wrap">
-                    Wed, 18 Nov 2020 11:23:00 -0500</relative-time>
+                    Thu, 26 Nov 2020 01:02:43 -0500</relative-time>
 
                   
                 </div>
@@ -178,7 +178,7 @@
               <div class="file-header d-flex flex-md-items-center flex-items-start">
                 <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
                   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    1961 Words
+                    559 Words
                     
 
                   </div>
@@ -194,6 +194,15 @@
                       hugo
                     </a>
                     
+                    <a class="muted-link mr-3" href="/blogs/tags/go">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Go
+                    </a>
+                    
                     
                   </div>
                 </div>
@@ -201,97 +210,21 @@
 
 
               <div class="Box-body px-5 pb-5">
-                <article class="markdown-body entry-content container-lg"><h2 id="起因">起因</h2>
-<p>某日在翻Github的时候偶然看到了<a href="https://paul.ren/">奇趣保罗</a>的博客，视觉效果非常棒。于是起了自己也做一个的心思。可是Typocho和WordPress的注册域名和备案一系列的操作感觉很繁琐，并且没法白嫖(重点)。而MkDocs虽然免费，但作为专门写文档的工具还是缺了点博客需要的部件。</p>
-<p>再一通谷歌找到了<a href="https://github.com/MeiK2333">Meik2333</a>的github-style Hugo博客主题，也是现在这个页面使用的主题。上手之后发现Hugo生成页面的速度真的非常快（应该说不愧是Go语言的产物），而且文档上面也有deploy到GitHub Page上的方法。用markdown写博客又和之前用MkDocs的想法异曲同工。就这个了！</p>
-<h2 id="准备工作">准备工作</h2>
-<p>首先安装Hugo,在mac上可以直接用brew</p>
-<pre><code>brew install hugo
-</code></pre><p>随后用hugo生成基础的网站框架,这里blogs可以替换成自己想要的文件夹名字</p>
-<pre><code>hugo new site blogs
-</code></pre><p>进去blogs，待会要修改里面的congig.toml文件以及往content(内容)和theme(风格)里添加文件。总之先设置下主题，这里用的是github-style。这行指令会下载最新版本的github-style到theme/github-style的位置</p>
-<pre><code>git submodule add git@github.com:MeiK2333/github-style.git themes/github-style
-</code></pre><p>接下来修改config.toml文件。这个是用来设置Hugo的。github-style给了一个基本模板</p>
-<pre><code>baseURL = &quot;https://example.com/&quot;
-title = &quot;GitHub Style&quot;
-googleAnalytics = &quot;UA-123-456-789&quot;
-theme = &quot;github-style&quot;
-copyright = &quot;© 2019. Theme by &lt;a href=\&quot;https://github.com/MeiK2333/github-style\&quot;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;&quot;
-
-[params]
-  author = &quot;example&quot;
-  description = &quot;example&quot;
-  github = &quot;example&quot;
-  facebook = &quot;example&quot;
-  twitter = &quot;example&quot;
-  misskey = &quot;user profile url&quot;
-  mastodon = &quot;user profile url&quot;
-  email = &quot;example@domain.com&quot;
-  utterances = &quot;example/example.github.io&quot;
-  avatar = &quot;https://example.com/images/avatar.png&quot;
-  url = &quot;https://example.com&quot;
-  keywords = &quot;blog, google analytics&quot;
-</code></pre><p>baseURL是我们想要的github.io地址，这里我的用户名是liz2020,而且我想把blogs设置在/blogs这个route下，所以设置的是liz2020.github.io/blogs。GoogleAnalytics是用来分析网站访问人数之类的数据的，可以暂时不改动，不会影响运行。params里面的参数对应的是左边中部显示的图标和链接，没有的可以直接删掉那行。比如说我不想放脸书地址，就可以直接把facebook那行删掉。</p>
-<p>avatar是头像，这里可以直接用自己GitHub的用户头像。去GitHub页面然后右键inspect自己的头像，找到src里面的图片地址复制过来就可以。</p>
-<p>utterances则是文章的评论系统，是将github issues当做放评论的地方，让任何有GitHub账号的人都可以回复。这里把example换成自己的用户名，我的是liz2020/liz2020.github.io。</p>
-<h2 id="创建文章">创建文章</h2>
-<p>先创建about(关于)页面</p>
-<pre><code>hugo new about.md
-</code></pre><p>这会在content里面创建about.md，我们打开那个文件修改一下。需要吧layout设置成“about”,然后draft那行可以删除</p>
-<pre><code>---
-title: &quot;About&quot;
-date: 2020-11-18T10:33:32-05:00
-layout: &quot;about&quot;
----
-</code></pre><p>其实到现在这个阶段已经可以运行网站来查看情况了。直接运行hugo server，他会显示服务放在http://localhost:1313/blogs/。可以打开阅览器查看</p>
-<pre><code>hugo server
-</code></pre><p>终于到创建博客文章的时候了，这个其实和刚刚创建about页面差不多，不过文章得放在content/posts里面</p>
-<pre><code>hugo new posts/article_name.md
-</code></pre><p>这会创建一个叫article_name.md的文章。里面的默认内容有生成时间，title（标题），还有“draft：true”。draft是草稿，只有把这个改成false文章才会显示。</p>
-<h2 id="发布到github">发布到GitHub</h2>
-<p>这个最好参考<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">官方文档</a>，我选的是里面GitHub User or Organization Pages这个部分的做法。里面会提供完整的脚本，可以直接复制使用。唯一注意的是里面有个upstream需要对应修改，得看一下git remote里面自己的remote叫什么名字，我的是origin。这里贴一下我用的脚本好了：</p>
-<pre><code>#!/bin/sh
-
-if [ &quot;`git status -s`&quot; ]
-then
-    echo &quot;The working directory is dirty. Please commit any pending changes.&quot;
-    exit 1;
-fi
-
-echo &quot;Deleting old publication&quot;
-rm -rf public
-mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
-
-echo &quot;Checking out gh-pages branch into public&quot;
-git worktree add -B gh-pages public origin/gh-pages
-
-echo &quot;Removing existing files&quot;
-rm -rf public/*
-
-echo &quot;Generating site&quot;
-hugo -t github-style
-
-echo &quot;Updating gh-pages branch&quot;
-cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to gh-pages (publish.sh)&quot;
-
-#echo &quot;Pushing to github&quot;
-#git push --all
-</code></pre><p>使用办法是</p>
-<pre><code>sh deploy.sh
-</code></pre><p>不过用了之后你大概会发现GitHub上没变化，因为脚本最后一行的git push &ndash;all是被注释掉的，所以我们的改变还没推到GitHub上。文档里面说这是让我们可以发布前自己决定要不要检查一下。感觉没问题就</p>
-<pre><code>git push --all
-</code></pre><p>别忘了去GitHub自己的repo里面把GitHub Pages打开，然后使用gh-pages这个branch。</p>
-<h2 id="题外话">题外话</h2>
-<p>其实github-style这个主题不是特别理想</p>
-<ul>
-<li>缺少了搜索功能</li>
-<li>默认是打开夜间模式，没有地方切换</li>
-<li>文章点开后没有上一篇下一篇的按钮，得退回去再点</li>
-<li>和GitHub页面过于像，一些案件会造成困扰。比如Pinned其实是最新发布文章，上下的GitHub图标是回主界面，右上角的头像没有什么用</li>
-</ul>
-<p>所以有空的话我之后会在这个主题的基础上修改一下。不过真的很感谢原作者Meik2333对主题的开源</p>
+                <article class="markdown-body entry-content container-lg"><p>在修github-style<a href="https://github.com/MeiK2333/github-style/issues/25">这个issue</a>的时候接触到了hugo的时间设置，感觉必须要记录一下这个time.Format的事情。</p>
+<p>首先Hugo是用Go写的，而在Go里面并没有用之前常见的<code>“YYYY MM DD”</code>的方式来表示年月日的时间，而是用了<code>“2006-01-02”</code>这样一个固定的参考时间(reference time)，而Hugo也是沿用了Go的这个设计。为什么要这样呢？相比之下可读性更强。而index的问题则是通过固定的reference time来解决的。对于这个特殊的参考时间<code>Mon Jan 2 15:04:05 -0700 MST 2006</code>，可以从下表看出1到7的index对应。</p>
+<pre><code>Jan        -&gt; 1      -&gt; Month
+2          -&gt; 2      -&gt; Day-of-Month
+15 = 3PM   -&gt; 15/3   -&gt; hour
+04         -&gt; 4      -&gt; minute
+05         -&gt; 5      -&gt; second
+2006       -&gt; 6      -&gt; year
+-0700      -&gt; 7      -&gt; time-zone
+</code></pre><p>另外一件事也是时间相关的，在Hugo里面使用Date, LastDate, PublishDate的时候会在对应时间没有设置的时候用已有的时间进行替换。比如说最近修改时间LastMod就会根据条件被替换成Date或者.GitInfo</p>
+<pre><code>.Lastmod
+the date the content was last modified. .Lastmod pulls from the lastmod field in a content’s front matter.
+1. If lastmod is not set, and .GitInfo feature is disabled, the front matter date field will be used.
+2. If lastmod is not set, and .GitInfo feature is enabled, .GitInfo.AuthorDate will be used instead.
+</code></pre><p>这也意味着时间类的参数很少会有拿不到值的情况。那要检查用户有没有设置lastmod就不能直接<code>{{if .LastMod}}</code>了，而是需要比如<code>{{ if ne .Lastmod .Date }}</code>. 可以参考这个<a href="https://discourse.gohugo.io/t/method-to-automate-last-modified-date/970/13">帖子</a>.</p>
 </article>
               </div>
             </div>

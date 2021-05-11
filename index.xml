@@ -9,55 +9,46 @@
     <lastBuildDate>Fri, 12 Feb 2021 15:37:51 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记录两次c&#43;&#43;实习的面试经历</title>
-      <link>https://liz2020.github.io/blogs/post/c&#43;&#43;_interview/</link>
+      <link>https://liz2020.github.io/blogs/post/210212-c&#43;&#43;_interview/</link>
       <pubDate>Fri, 12 Feb 2021 15:37:51 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/c&#43;&#43;_interview/</guid>
-      <description>教练，和说好的不一样啊</description>
-    </item>
-    
-    <item>
-      <title>Clean Code</title>
-      <link>https://liz2020.github.io/blogs/post/clean-code/</link>
-      <pubDate>Fri, 29 Jan 2021 13:58:30 -0500</pubDate>
-      
-      <guid>https://liz2020.github.io/blogs/post/clean-code/</guid>
-      <description>读代码之丑，bad smell of code</description>
+      <guid>https://liz2020.github.io/blogs/post/210212-c&#43;&#43;_interview/</guid>
+      <description>经历以及后续总结</description>
     </item>
     
     <item>
       <title>Amazon AWS Starter account 使用体验</title>
-      <link>https://liz2020.github.io/blogs/post/amazon-aws-educate-account/</link>
+      <link>https://liz2020.github.io/blogs/post/201217-amazon-aws-educate-account/</link>
       <pubDate>Thu, 17 Dec 2020 23:03:38 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/amazon-aws-educate-account/</guid>
-      <description>限制多多</description>
+      <guid>https://liz2020.github.io/blogs/post/201217-amazon-aws-educate-account/</guid>
+      <description>实际体验下来用starter账号根据机构的设置会有各种各样的限制，虽然EC2确实很方便</description>
     </item>
     
     <item>
       <title>Hugo的time.Format或者说时间的格式</title>
-      <link>https://liz2020.github.io/blogs/post/hugo-date-and-go-date/</link>
+      <link>https://liz2020.github.io/blogs/post/201126-hugo-date-and-go-date/</link>
       <pubDate>Thu, 26 Nov 2020 01:02:43 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/hugo-date-and-go-date/</guid>
+      <guid>https://liz2020.github.io/blogs/post/201126-hugo-date-and-go-date/</guid>
       <description>其实是Go的</description>
     </item>
     
     <item>
       <title>给博客设置Google Analytics</title>
-      <link>https://liz2020.github.io/blogs/post/setup-googleanalytics/</link>
+      <link>https://liz2020.github.io/blogs/post/201119-setup-googleanalytics/</link>
       <pubDate>Thu, 19 Nov 2020 16:34:10 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/setup-googleanalytics/</guid>
+      <guid>https://liz2020.github.io/blogs/post/201119-setup-googleanalytics/</guid>
       <description>享受在后台看博客阅览量为0的快乐…大概!</description>
     </item>
     
     <item>
       <title>用Hugo在GitHub上搭建个人博客</title>
-      <link>https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/</link>
+      <link>https://liz2020.github.io/blogs/post/201118-use-hugo-to-build-blog-on-github/</link>
       <pubDate>Wed, 18 Nov 2020 11:23:00 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/use-hugo-to-build-blog-on-github/</guid>
+      <guid>https://liz2020.github.io/blogs/post/201118-use-hugo-to-build-blog-on-github/</guid>
       <description>虽说更重要的是能坚持写文章，但白嫖能增加幸福感啊!</description>
     </item>
     

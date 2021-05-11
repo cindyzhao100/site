@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 17 Dec 2020 23:03:38 -0500</lastBuildDate><atom:link href="https://liz2020.github.io/blogs/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon AWS Starter account 使用体验</title>
-      <link>https://liz2020.github.io/blogs/post/amazon-aws-educate-account/</link>
+      <link>https://liz2020.github.io/blogs/post/201217-amazon-aws-educate-account/</link>
       <pubDate>Thu, 17 Dec 2020 23:03:38 -0500</pubDate>
       
-      <guid>https://liz2020.github.io/blogs/post/amazon-aws-educate-account/</guid>
-      <description>限制多多</description>
+      <guid>https://liz2020.github.io/blogs/post/201217-amazon-aws-educate-account/</guid>
+      <description>实际体验下来用starter账号根据机构的设置会有各种各样的限制，虽然EC2确实很方便</description>
     </item>
     
   </channel>

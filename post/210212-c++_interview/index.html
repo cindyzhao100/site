@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/light.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/dark.css' />
     <link rel="stylesheet" href='https://liz2020.github.io/blogs/css/syntax.css' />
-    <title>Clean Code - Lihao&#39;s Blog | 立昊的博客</title>
+    <title>记录两次c&#43;&#43;实习的面试经历 - Lihao&#39;s Blog | 立昊的博客</title>
     
     <link rel="icon" type="image/x-icon" href='https://liz2020.github.io/blogs/images/favicon.ico'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="读代码之丑，bad smell of code" />
+  content="经历以及后续总结" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://liz2020.github.io/blogs/post/clean-code/" />
+<link rel="canonical" href="https://liz2020.github.io/blogs/post/210212-c&#43;&#43;_interview/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Clean Code - Lihao&#39;s Blog | 立昊的博客" />
+<meta name="twitter:title" content="记录两次c&#43;&#43;实习的面试经历 - Lihao&#39;s Blog | 立昊的博客" />
 <meta name="twitter:description"
-  content="读代码之丑，bad smell of code" />
+  content="经历以及后续总结" />
 <meta name="twitter:site" content="https://liz2020.github.io/blogs" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Clean Code - Lihao&#39;s Blog | 立昊的博客">
+<meta property="og:title" content="记录两次c&#43;&#43;实习的面试经历 - Lihao&#39;s Blog | 立昊的博客">
 <meta property="og:description"
-  content="读代码之丑，bad smell of code" />
-<meta property="og:url" content="https://liz2020.github.io/blogs/post/clean-code/" />
-<meta property="og:site_name" content="Clean Code" />
+  content="经历以及后续总结" />
+<meta property="og:url" content="https://liz2020.github.io/blogs/post/210212-c&#43;&#43;_interview/" />
+<meta property="og:site_name" content="记录两次c&#43;&#43;实习的面试经历" />
 <meta property="og:image"
   content="https://liz2020.github.io/blogs">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2021-01-29 13:58:30 -0500 EST" />
+<meta property="article:published_time" content="2021-02-12 15:37:51 -0500 EST" />
 
 
 
@@ -154,12 +154,12 @@
                   <span class="author">
                     <a href="https://liz2020.github.io/blogs">Lihao Zhu</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://liz2020.github.io/blogs/post/clean-code/">Clean Code</a></strong>
+                      href="https://liz2020.github.io/blogs/post/210212-c&#43;&#43;_interview/">记录两次c&#43;&#43;实习的面试经历</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Fri, 29 Jan 2021 13:58:30 -0500"
+                  Created <relative-time datetime="Fri, 12 Feb 2021 15:37:51 -0500"
                     class="no-wrap">
-                    Fri, 29 Jan 2021 13:58:30 -0500</relative-time>
+                    Fri, 12 Feb 2021 15:37:51 -0500</relative-time>
 
                   
                 </div>
@@ -178,20 +178,29 @@
               <div class="file-header d-flex flex-md-items-center flex-items-start">
                 <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
                   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    368 Words
+                    785 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="/blogs/tags/refactoring">
+                    <a class="muted-link mr-3" href="/blogs/tags/c&#43;&#43;">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      refactoring
+                      C&#43;&#43;
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/blogs/tags/interview">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      interview
                     </a>
                     
                     
@@ -201,9 +210,10 @@
 
 
               <div class="Box-body px-5 pb-5">
-                <article class="markdown-body entry-content container-lg"><p>蛮久之前读过《代码整洁之道》，不过阅读之后的关注点都在变量和方法的命名上了。更多的部分，比如说一个函数做一件事情，或者是函数的长度不要超过30行之类的建议并没有落到实处。前几天逛极客时间的时候看到了《代码之丑》这个专栏。文章本身的也不长，但是收获却是不小。其中对于常函数，大类和长参数列表的简化方法都很实用。强烈建议花个下午茶的时间读一下。</p>
-<p>开幕雷击，getter和setter这种很常见的东西其实往往代表了代码的坏味道。其一是它们很容易暴露代码的内部实现细节，而且很多时候编辑器有工具会自动生成它们，如果有其他代码不小心call了setter就很容易造成不可预料的后果，那更是雪上加霜了。其二是他们的存在往往暗示着对需求理解的不充分，可以从需求的角度再设计新的方法来实现setter的作用。</p>
-<p>类似的冲击观点还有挺多，这里贴个链接 -&gt; <a href="https://time.geekbang.org/column/intro/100068401">代码之丑</a></p>
+                <article class="markdown-body entry-content container-lg"><p>不知道是c++的实习本身比较特殊，还是因为都是组面（直接和组里面的员工面试）的关系。在technical interview的时候都没有问算法题目，45~60分钟里面先是过了简历，然后就在考察C++的知识。比如说各个数据结构有什么不同(vector, map, queue, set); smart pointer; lambda function; move semantic; reference; class vs struct; inheritance &amp; polymorphism之类的……我面试前准备的内容，包括从HR那里收到的准备内容，都是算法题啊！在学校的课程里面运用到C会更多（特指OS课），涉及到C++的智能指针和lamdba这类题目就回答的磕磕绊绊的。不过能感觉到，作为intern的面试，考察的点不单单是在是否知道某个知识点上，还有在面对不知道的知识点会怎么处理。其中一个面试就从lambda展开，开始考察了stack和heap，以及pass by value or reference.</p>
+<hr>
+<p>05/10/21 更新</p>
+<p>现在回想起来，我在那两次面试经历里收获最大的部分有三点。第一个是熟悉了面试的流程，从完成OA到HR联系到具体面试，流程上大体都是相同的。第二点是要承认面试的意外性，心态要正常。什么问题都有可能在面试里面遇到，所以遇到什么问题都不需要意外。其实除了bar raiser以外，HR和面试官都可以是自己的’友方势力‘，因为他们的目的是招人，而不是折腾人（某些心理扭曲的例外）。面试的目的也只是在短时间内好好的展现自己，所以尽量做到实事求是。遇到没听清和不太了解的事情也可以要求对方重复，千万不要嗯嗯嗯的就糊弄过去了。第三点是有条件可以面试结束后几天内向面试官发感谢信和问面试里可以提升的地方，如果对面人比较好回了消息，可以拿到十分不错的建议。我就收到了要think out loud的feedback。这点非常意外，因为我一直以为自己在面试中还蛮健谈的。后来才发现是思考时间长了，原本以为的一边想一边说和真正需要的变想边说比较起来还是不够。吸取教训之后在后续的其他面试里面变得更为话唠，哈哈哈。</p>
 </article>
               </div>
             </div>
