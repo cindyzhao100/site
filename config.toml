@@ -7,13 +7,12 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  author = "Lihao Zhu"
+  author = "Cindy Zhao"
   description = "personal blog"
   github = "liz2020"
   email = "lihaozhu@seas.upenn.edu"
-  url = "https://liz2020.github.io/me"
-  utterances = "liz2020/blogs"
-  avatar = "https://avatars0.githubusercontent.com/u/25622540?s=460&v=4"
+  url = "cindyzhao100.github.io/blogs/"
+  avatar = "https://avatars.githubusercontent.com/u/29205236?s=400&v=4"
   keywords = "blog, google analytics"
 
 [frontmatter]
