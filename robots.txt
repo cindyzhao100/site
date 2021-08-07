@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://cindyzhao100.github.io/blogs/sitemap.xml
