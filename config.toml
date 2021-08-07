@@ -12,6 +12,7 @@ pygmentsUseClasses = true
   github = "liz2020"
   email = "lihaozhu@seas.upenn.edu"
   url = "cindyzhao100.github.io/blogs/"
+  utterances = "xhzhao/blogs"
   avatar = "https://avatars.githubusercontent.com/u/29205236?s=400&v=4"
   keywords = "blog, google analytics"
 
