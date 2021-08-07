@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Lihao&#39;s Blog | 立昊的博客</title>
-    <link>https://liz2020.github.io/blogs/categories/</link>
-    <description>Recent content in Categories on Lihao&#39;s Blog | 立昊的博客</description>
+    <title>Categories on AABBC</title>
+    <link>https://cindyzhao100.github.io/blogs/categories/</link>
+    <description>Recent content in Categories on AABBC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright><atom:link href="https://liz2020.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2019. Theme by &lt;a href=&#34;https://github.com/liz2020/github-style&#34;&gt;&lt;span&gt;github-style&lt;/span&gt;&lt;/a&gt;</copyright><atom:link href="https://cindyzhao100.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
