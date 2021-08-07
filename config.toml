@@ -9,7 +9,7 @@ pygmentsUseClasses = true
 [params]
   author = "Cindy Zhao"
   description = "personal blog"
-  github = "Cindy"
+  github = "cindyzhao100"
   email = "cindyzhao100@gmail.com"
   url = "cindyzhao100.github.io/blogs/"
   utterances = "xhzhao/blogs"
