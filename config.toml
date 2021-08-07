@@ -1,4 +1,4 @@
-baseURL = "https://cindyzhao100.github.io/blogs"
+baseURL = "https://cindyzhao100.github.io/site"
 title = "碎碎念"
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -86,7 +86,7 @@ tocopen = false
   hiddenInSingle = true
 
   [params.editPost]
-  URL = "https://github.com/cindyzhao100/blogs/content/post"
+  URL = "https://github.com/cindyzhao100/site/content/post"
   Text = "Suggest Changes"
   appendFilePath = true
 
