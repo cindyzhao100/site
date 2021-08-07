@@ -1,5 +1,5 @@
 baseURL = "https://cindyzhao100.github.io/blogs"
-title = "AABBC"
+title = "碎碎念"
 googleAnalytics = "UA-183495039-1"
 theme = "github-style"
 copyright = "© 2019. Theme by <a href=\"https://github.com/liz2020/github-style\"><span>github-style</span></a>"
@@ -9,8 +9,8 @@ pygmentsUseClasses = true
 [params]
   author = "Cindy Zhao"
   description = "personal blog"
-  github = "liz2020"
-  email = "lihaozhu@seas.upenn.edu"
+  github = "Cindy"
+  email = "cindyzhao100@gmail.com"
   url = "cindyzhao100.github.io/blogs/"
   utterances = "xhzhao/blogs"
   avatar = "https://avatars.githubusercontent.com/u/29205236?s=400&v=4"
