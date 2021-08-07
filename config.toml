@@ -1,20 +1,112 @@
 baseURL = "https://cindyzhao100.github.io/blogs"
 title = "碎碎念"
-googleAnalytics = "UA-183495039-1"
-theme = "github-style"
-copyright = "© 2019. Theme by <a href=\"https://github.com/liz2020/github-style\"><span>github-style</span></a>"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+#googleAnalytics = "UA-123-45"
+
+[minify]
+disableXML = true
+#minifyOutput = true
 
 [params]
-  author = "Cindy Zhao"
-  description = "personal blog"
-  github = "cindyzhao100"
-  email = "cindyzhao100@gmail.com"
-  url = "cindyzhao100.github.io/blogs/"
-  utterances = "xhzhao/blogs"
-  avatar = "https://avatars.githubusercontent.com/u/29205236?s=400&v=4"
-  keywords = "blog, google analytics"
+env = "production"
+title = "碎碎念"
+description = "阿巴阿巴"
+keywords = [ "Blog"]
+author = "Cindy"
+#images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
 
-[frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+  [params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = "Home"
+  #icon = "#"
+  #iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "ExampleSite"
+  subtitle = "This is subtitle"
+  imageUrl = "<img location>"
+  #imageWidth = 120
+  #imageHeight = 120
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/cindyzhao100"
+
+[params.analytics.google]
+#SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+#SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+#SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/cindyzhao100/blogs/content/post"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+#[[menu.main]]
+#identifier = "Categories"
+#name = "categories"
+#url = "/categories/"
+#weight = 10
+
+[[menu.main]]
+identifier = "Categories"
+name = "有的没的"
+url = "/post/"
+weight = 20
