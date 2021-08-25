@@ -1,5 +1,5 @@
 ---
-title: "Haidilao"
+title: "海底捞"
 date: 2021-08-11T17:54:22-07:00
 draft: false
 ---
